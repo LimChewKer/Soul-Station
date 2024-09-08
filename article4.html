@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Station</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html" class="logo">Soul Station</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton" onclick="search()" style="background-color: #557c57; color: white;">Search</button>
+            </div>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <!-- Breadcrumb Navigation -->
+            <div class="breadcrumb">
+                <a href="main.html">Home</a> &gt; <a href="article.html">Mental health services</a> &gt; <a href="#">The Role of Nutrition in Mental Health</a>
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="main-content">
+                <!-- Article Section -->
+                <div class="article-content">
+                    <h1>The Role of Nutrition in Mental Health: What You Eat Matters</h1>
+                    <p>In the quest for optimal mental health, nutrition is a powerful, yet often overlooked, ally. The connection between what we eat and how we feel is profound, influencing everything from mood and cognition to overall psychological well-being. It’s time to rethink the role of nutrition, not just as fuel for the body, but as a cornerstone of mental health.</p>
+
+                    <h2>Essential Nutrients for Mental Well-Being</h2>
+                    <p>Consider the impact of omega-3 fatty acids, which are abundant in fatty fish like salmon, mackerel, and sardines. These essential fats are crucial for maintaining brain health by influencing neurotransmitter function and reducing inflammation. Omega-3s are involved in building and repairing brain cells, and their deficiency has been linked to an increased risk of mood disorders such as depression and anxiety. Incorporating omega-3-rich foods into your diet or considering supplements can contribute significantly to a more balanced mood and cognitive function.</p>
+                    <p>Similarly, B vitamins, including B6, B12, and folate, are vital for mental health. These vitamins play a key role in neurotransmitter synthesis, which affects mood regulation and cognitive performance. Deficiencies in B vitamins can lead to symptoms of depression, irritability, and cognitive decline. Foods rich in B vitamins—such as whole grains, eggs, dairy products, and leafy greens—help ensure that you maintain optimal levels of these essential nutrients, supporting both mental clarity and emotional stability.</p>
+
+                    <h2>The Gut-Brain Connection</h2>
+                    <p>The gut-brain connection reveals how diet impacts mental health through the gut microbiome, a complex community of microorganisms in the digestive system. A diet high in fiber—found in fruits, vegetables, legumes, and whole grains—supports a healthy gut microbiome, which in turn can positively influence brain function and mood regulation. Fiber promotes the growth of beneficial gut bacteria that produce compounds beneficial to mental health, helping to reduce inflammation and improve mood.</p>
+                    <p>Additionally, probiotics, found in fermented foods like yogurt, kefir, and sauerkraut, can further enhance gut health and influence mental well-being. These beneficial bacteria can help maintain a balanced gut microbiome, which has been associated with reduced symptoms of anxiety and depression. By incorporating these probiotic-rich foods into your diet, you support a healthy gut environment that can positively impact your mental health and cognitive function.</p>
+
+                    <h2>Practical Tips for Nutritional Mental Health</h2>
+                    <p>Incorporating nutrition into your mental health strategy doesn’t have to be overwhelming. Start with small changes, such as adding a serving of leafy greens to your meals or swapping out sugary snacks for fruits and nuts. Over time, these adjustments can lead to significant improvements in your mood and cognitive function.</p>
+                    <p>In conclusion, nutrition plays a crucial role in mental health, offering a natural and effective way to support well-being. By choosing a diet rich in essential nutrients and mindful of your body’s needs, you can enhance your mental clarity, emotional stability, and overall quality of life. Remember, what you eat matters—nourish your mind with the right fuel, and it will thank you.</p>
+
+                    <hr class="divider" />
+                </div>
+
+                <!-- Related Posts Section -->
+                <div class="related-posts">
+                    <div class="article-actions">
+                        <button id="read-article" class="action-button">
+                            <img src="play.png" alt="Listen Icon" class="button-icon">
+                            Listen
+                        </button>
+                        <button id="print-article" class="action-button">
+                            <img src="download.png" alt="Print Icon" class="button-icon">
+                            Source
+                        </button>
+                    </div>
+                    <h2>Related Posts</h2>
+                    <ul>
+                        <li><a href="article2.html">Related Post 1</a></li>
+                        <li><a href="article3.html">Related Post 2</a></li>
+                        <li><a href="article5.html">Related Post 3</a></li>
+                        <li><a href="article6.html">Related Post 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="audio-player">
+        <button id="play-button">
+            <img src="play.png" alt="Play Audio">
+        </button>
+        <audio id="audio" src="download.mp3" preload="auto"></audio>
+    </div>
+    <script src="voice.js"></script>
+    <script src="search.js"></script>
+    <script src="song.js"></script>
+    <script>
+        document.getElementById('read-article').addEventListener('click', function() {
+            const articleText = document.querySelector('.article-content').innerText;
+            const utterance = new SpeechSynthesisUtterance(articleText);
+            speechSynthesis.speak(utterance);
+        });
+    
+        document.getElementById('print-article').addEventListener('click', function() {
+            window.open('article4.pdf', '_blank');
+        });
+    </script>
+</body>
+</html>

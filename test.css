@@ -1,0 +1,90 @@
+/* Main Content */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #34495e;
+}
+
+p {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    color: #34495e;
+}
+
+.question-options {
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center; /* Center align buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Margin for spacing */
+}
+
+.question-options button {
+    font-size: 16px; /* Same font size as labels */
+    width: 100%; /* Make buttons full width of the container */
+    max-width: 400px; /* Limit maximum width */
+    padding: 10px; /* Adjust padding for better spacing */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Round corners */
+    background-color: #749d76; /* Button color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.question-options button:hover {
+    background-color: #486d4a; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #21618c;
+    transform: scale(1.05);
+}
+
+/* Result Section */
+.result {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #34495e;
+}
+
+/* Footer */
+footer {
+    background-color: #b3c7c3; /* Light green */
+    padding: 20px 0;
+    text-align: center;
+    color: #34495e;
+}

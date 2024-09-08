@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"  href="logo.png">
+    <title>Soul Station</title>
+    <link rel="stylesheet" href="articlepage.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html" class="logo">Soul Station</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton" onclick="search()" style="background-color: #557c57; color: white;">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="main.html">Home</a> &gt; <a href="article.html">Mental health services</a>
+        </div>
+        <article class="news-item">
+            <h2><a href="article1.html">Psychological First Aid</a></h2>
+            <p>Five Steps to Provide Psychological First Aid...</p>
+        </article>
+
+        <article class="news-item">
+            <h2><a href="article2.html">Navigating the Maze of Mental Health: Strategies for Finding Support</a></h2>
+            <p>Mental health can often feel like a labyrinthine journey, full of twists and turns that can leave you feeling lost or overwhelmed. Whether ...</p>
+        </article>
+
+        <article class="news-item">
+            <h2><a href="article3.html">The Path to Mental Well-Being: Working toward a Fulfilling and Harmonious Life</a></h2>
+            <p>What is the best medicine in this recent modern world? It is obvious that mental stability is very essential. People may be...</p>
+        </article>
+
+        <article class="news-item">
+            <h2><a href="article4.html">The Role of Nutrition in Mental Health: What You Eat Matters</a></h2>
+            <p>In the quest for optimal mental health, nutrition is a powerful, yet often overlooked, ally. The connection between what we eat and...</p>
+        </article>
+
+        <article class="news-item">
+            <h2><a href="article5.html">Common Types of Mental Health Struggles</a></h2>
+            <p>Eental health struggles affect millions of people globally and can manifest in various ways. These challenges can be ...</p>
+        </article>
+
+        <article class="news-item">
+            <h2><a href="article6.html">Mindfulness and Mental Health: How Simple Practices Can Make a Big Difference</a></h2>
+            <p>In today’s fast-paced world, mindfulness has emerged as a powerful tool for enhancing mental health and ...</p>
+        </article>
+    </main>
+    <div id="audio-player">
+        <button id="play-button">
+            <img src="play.png" alt="Play Audio">
+        </button>
+        <audio id="audio" src="download.mp3" preload="auto"></audio>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Soul Station. All rights reserved.</p>
+    </footer>
+
+    <script src="voice.js"></script>
+    <script src="search.js"></script>
+    <script src="song.js"></script>
+</body>
+</html>

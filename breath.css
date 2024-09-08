@@ -1,0 +1,63 @@
+.container-breath {
+            background-color: #b3c7c3;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1 {
+            color: #34495e; /* Light gray for contrast */
+            margin-bottom: 20px;
+        }
+        #game-area {
+            margin-top: 30px;
+            position: relative;
+            height: 200px;
+        }
+        #circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, #ffffff, #e6e6e6b4); /* Lighter blue shades */
+            border-radius: 50%;
+            transition: all 4s ease-in-out;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+        #timer, #instructions, #message {
+            margin-top: 20px;
+            color: #4f7150; /* Light gray for better readability */
+        }
+        #timer {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #message {
+            font-weight: bold;
+            min-height: 24px;
+        }
+        select, .start-button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #85b787; /* Lighter blue */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        select:hover, .start-button:hover {
+            background-color: #4f7150; /* Darker blue on hover */
+        }
+main{
+    padding-bottom: 720px;
+}

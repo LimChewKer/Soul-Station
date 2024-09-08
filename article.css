@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #D8E5DC; /* Soft pastel green background */
+    color: #34495e;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #b3c7c3; /* Light green */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #34495e;
+    font-weight: bold;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 10px;
+    background-color: #E8EAE5;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 80%;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Main Content Flexbox */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between the columns */
+}
+
+/* Article Content Styles */
+.article-content {
+    width: 70%;
+}
+
+/* Related Posts Styles */
+.related-posts {
+    width: 30%;
+    background-color: #f7f7f7; /* Light background for distinction */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.related-posts h2 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.related-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-posts li {
+    margin-bottom: 10px;
+}
+
+.related-posts a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.related-posts a:hover {
+    color: #b3c7c3; /* Darker blue */
+}
+
+.article-actions {
+    display: inline-flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.action-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #b3c7c3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.action-button:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.button-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}

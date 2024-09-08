@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Station</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html" class="logo">Soul Station</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton" onclick="search()" style="background-color: #557c57; color: white;">Search</button>
+            </div>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <!-- Breadcrumb Navigation -->
+            <div class="breadcrumb">
+                <a href="main.html">Home</a> &gt; <a href="article.html">Mental health services</a> &gt; <a href="#">Common Types of Mental Health Struggles</a>
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="main-content">
+                <!-- Article Section -->
+                <div class="article-content">
+                    <h1>Common Types of Mental Health Struggles</h1>   
+                    <p>Mental health struggles affect millions of people globally and can manifest in various ways. These challenges can be triggered by a combination of genetic, biological, environmental, and psychological factors. While everyone’s experience is unique, there are several common types of mental health struggles that many individuals face. Here’s a brief overview of some of the most prevalent forms:</p> 
+
+                    <h2>Anxiety Disorders</h2>
+                    <p>Anxiety disorders are among the most common mental health struggles. They involve persistent, excessive worry or fear that interferes with daily life. Types of anxiety disorders include generalized anxiety disorder (GAD), panic disorder, social anxiety disorder, and specific phobias. People with anxiety disorders may experience symptoms such as restlessness, rapid heartbeat, excessive sweating, and difficulty concentrating.</p>
+
+                    <h2>Depressive Disorders</h2>
+                    <p>Depression is considered to be a mood disorder within which prolonged feelings of sadness, hopelessness, and loss of interest in even the most pleasurable hobbies are present. Most common among the multiple types is major depressive disorder (MDD) and persistent depressive disorder (PDD) over time. Those who are inflicted by depression may find themselves battling with low energy levels and significant changes in their eating and sleeping patterns, low self esteem, and poor judgment. It can alter daily functioning, interpersonal relations, as well as physical health.</p>
+
+                    <h2>Bipolar Disorder</h2>
+                    <p>This disorder is typically associated with intense emotional experiences which swings from clinical depression to one of heightened mood, also known as mania or hypomania the later being a milder form of the raging state. The depressed ones illustrate, during their manic periods and episodes, abnormal symptoms and views include feelings of unnecessary excessive strength and jocularity with talents and prancing about without regard to the consequences and to some extent abnormal anger. If this disease is not treated, it will interfere with the patient’s performance, social relations, and everyday routine activity.</p>
+
+                    <h2>Obsessive-Compulsive Disorder (OCD)</h2>
+                    <p>In OCD, a person has constant unwanted thoughts, which are known as obsessions, as well as behaviours or compulsions that are performed over and over again. To explain briefly, these compulsions are meant to relieve the anxieties that come from the obsessions. To illustrate, a patient suffering from OCD may have excessive fears of dirt and thus feel an uncontrollable urge to scrub their hands many times notwithstanding the fact that such doing does not make sense. OCD tends to use up a great portion of a person’s time and has an adverse effect on lives of people.</p>
+
+                    <h2>Post-Traumatic Stress Disorder (PTSD)</h2>
+                    <p>Also known as PTSD, this is a psychological illness that will occur in some individuals who experience or witness extremely frightening events, including the aftermath of a car accident, a violent assault, or the consequences of a natural disaster. A person who has suffered such a trauma will regularly attempt to relive it within their lifetime using hallucinations, or may have bad habits, unpleasant sensations and become over zealous about the happenings, or do everything possible to forget about those events. Such a disorder is a threat to day to day activities and even put the sufferer at an increased risk of developing depression and drug addiction among other conditions.</p>
+
+                    <h2>Eating Disorders</h2>
+                    <p>Eating disorders which have gained wide acceptance in recent days include anorexia nervosa, bulimia nervosa and binge-eating disorder are directly associated with pathological obesity. These disorders commence due to a number of factors mostly depression, self-hate, self–doubt, and trauma. Even though anorexia nervosa can lead and cause extreme weight loss, physical disorders like malnutrition, cardiac problem and gastrointestinal disorders can be observed in binge eating disorder.</p>
+
+                    <h2>Substance use disorders</h2>
+                    <p>Substance use disorders refer to the excessive intake of alcohol, drugs, or any other forbidden substances as a response to painful feelings, stressful situations or past trauma. Addiction is one of the resulting problems which negatively affects the physical health, mental well-being, social connections and activities of daily living. It is also known that any treatment of the patients suffering from these disorders requires a use of psychotherapy, support groups and sometimes drugs to deal with the patients’ addiction.</p>
+
+                    <h2>Conclusion</h2>
+                    <p>Mental health can be disrupted in numerous ways and everyone, irrespective of their background or status, is susceptible to this. Serialization looks like a curse to some people, others are depressed, others have anxiety disorders among others in the population, and if treated in advance, this will assist mitigate the issues. Still, with the right treatment, anyone can have a normal healthy life with other difficulties.</p>
+
+                    <hr class="divider" />
+                </div>
+
+                <!-- Related Posts Section -->
+                <div class="related-posts">
+                    <div class="article-actions">
+                        <button id="read-article" class="action-button">
+                            <img src="play.png" alt="Listen Icon" class="button-icon">
+                            Listen
+                        </button>
+                        <button id="print-article" class="action-button">
+                            <img src="download.png" alt="Print Icon" class="button-icon">
+                            Source
+                        </button>
+                    </div>
+                    <h2>Related Posts</h2>
+                    <ul>
+                        <li><a href="article1.html">Related Post 1</a></li>
+                        <li><a href="article2.html">Related Post 2</a></li>
+                        <li><a href="article3.html">Related Post 3</a></li>
+                        <li><a href="article4.html">Related Post 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="audio-player">
+        <button id="play-button">
+            <img src="play.png" alt="Play Audio">
+        </button>
+        <audio id="audio" src="download.mp3" preload="auto"></audio>
+    </div>
+    <script src="voice.js"></script>
+    <script src="search.js"></script>
+    <script src="song.js"></script>
+    <script>
+        document.getElementById('read-article').addEventListener('click', function() {
+            const articleText = document.querySelector('.article-content').innerText;
+            const utterance = new SpeechSynthesisUtterance(articleText);
+            speechSynthesis.speak(utterance);
+        });
+    
+        document.getElementById('print-article').addEventListener('click', function() {
+            window.open('article5.pdf', '_blank');
+        });
+    </script>
+</body>
+</html>

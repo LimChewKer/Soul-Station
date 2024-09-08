@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png"  href="logo.png">
+        <title>Soul Station</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="resource.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"><a href="main.html" class="logo">Soul Station</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button id="searchButton" onclick="search()" style="background-color: #557c57; color: white;">Search</button>
+                </div>
+            </nav>
+        </header>
+<body>
+    
+    <div class="container">
+        <h1>Mental Health Resource Aggregator</h1>
+        <ul class="resource-list" id="resourceList">
+            <!-- Resources will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script>
+        // Sample resource data (in a real application, this would come from a backend API)
+        const resources = [
+            {
+                name: "National Suicide Prevention Lifeline",
+                description: "24/7, free and confidential support for people in distress.",
+                phone: "1-800-273-8255",
+                website: "https://suicidepreventionlifeline.org/"
+            },
+            {
+                name: "Crisis Text Line",
+                description: "Text HOME to 741741 to connect with a Crisis Counselor.",
+                phone: "Text HOME to 741741",
+                website: "https://www.crisistextline.org/"
+            },
+            {
+                name: "SAMHSA's National Helpline",
+                description: "Treatment referral and information service (in English and Spanish).",
+                phone: "1-800-662-4357",
+                website: "https://www.samhsa.gov/find-help/national-helpline"
+            }
+        ];
+
+        function displayResources() {
+            const resourceList = document.getElementById('resourceList');
+            resources.forEach(resource => {
+                const li = document.createElement('li');
+                li.className = 'resource-item';
+                li.innerHTML = `
+                    <h3>${resource.name}</h3>
+                    <p>${resource.description}</p>
+                    <p>Phone: ${resource.phone}</p>
+                    <p>Website: <a href="${resource.website}" target="_blank">${resource.website}</a></p>
+                `;
+                resourceList.appendChild(li);
+            });
+        }
+
+        // Call the function to display resources when the page loads
+        window.onload = displayResources;
+    </script>
+</body>
+</html>

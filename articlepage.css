@@ -1,0 +1,91 @@
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif; /* Optional: a clean, readable font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header */
+header.banner {
+    background-color: #222; /* Dark gray background for header */
+    padding: 20px;
+}
+
+header .banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .banner-content h1 {
+    color: #fff; /* White text color for the header title */
+}
+
+header nav .contribute-button {
+    background-color: #34495e; /* Pink background for the button */
+    color: #fff; /* White text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Style for the main content */
+main {
+    padding: 20px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+article.news-item {
+    background-color: #A5C1B1; /* White background with 10% opacity */
+    color: #fff; /* White text color for news items */
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    position: relative; /* Ensure scaling effect works */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+article.news-item:hover {
+    transform: scale(1.02); /* Scale up by 5% on hover */
+}
+
+article.news-item h2 a {
+    color: #34495e; /* Pink color for article links */
+    text-decoration: none;
+}
+
+article.news-item h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #222; /* Dark gray background for footer */
+    color: #fff; /* White text color for footer */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.search {
+    width: 15px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #333;
+    text-decoration: none;
+}

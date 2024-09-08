@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"  href="logo.png">
+    <title>Soul Station</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html" class="logo">Soul Station</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton" onclick="search()" style="background-color: #557c57; color: white;">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Mental Health Self-Assessment</h1>
+            <p>Answer the following questions honestly to check your current mental well-being.</p>
+            
+            <form id="mentalHealthForm">
+                <div class="question" id="question1">
+                    <label for="q1">1. Have you been feeling down, depressed, or hopeless?</label>
+                    <div class="question-options">
+                        <button type="button" onclick="answerQuestion('q1', 1)">Strongly Disagree</button>
+                        <button type="button" onclick="answerQuestion('q1', 2)">Disagree</button>
+                        <button type="button" onclick="answerQuestion('q1', 3)">Neutral</button>
+                        <button type="button" onclick="answerQuestion('q1', 4)">Agree</button>
+                        <button type="button" onclick="answerQuestion('q1', 5)">Strongly Agree</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question2" style="display: none;">
+                    <label for="q2">2. Do you have little interest or pleasure in doing things?</label>
+                    <div class="question-options">
+                        <button type="button" onclick="answerQuestion('q2', 1)">Strongly Disagree</button>
+                        <button type="button" onclick="answerQuestion('q2', 2)">Disagree</button>
+                        <button type="button" onclick="answerQuestion('q2', 3)">Neutral</button>
+                        <button type="button" onclick="answerQuestion('q2', 4)">Agree</button>
+                        <button type="button" onclick="answerQuestion('q2', 5)">Strongly Agree</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question3" style="display: none;">
+                    <label for="q3">3. Do you have trouble concentrating on tasks?</label>
+                    <div class="question-options">
+                        <button type="button" onclick="answerQuestion('q3', 1)">Strongly Disagree</button>
+                        <button type="button" onclick="answerQuestion('q3', 2)">Disagree</button>
+                        <button type="button" onclick="answerQuestion('q3', 3)">Neutral</button>
+                        <button type="button" onclick="answerQuestion('q3', 4)">Agree</button>
+                        <button type="button" onclick="answerQuestion('q3', 5)">Strongly Agree</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question4" style="display: none;">
+                    <label for="q4">4. Are you feeling more tired than usual, even after resting?</label>
+                    <div class="question-options">
+                        <button type="button" onclick="answerQuestion('q4', 1)">Strongly Disagree</button>
+                        <button type="button" onclick="answerQuestion('q4', 2)">Disagree</button>
+                        <button type="button" onclick="answerQuestion('q4', 3)">Neutral</button>
+                        <button type="button" onclick="answerQuestion('q4', 4)">Agree</button>
+                        <button type="button" onclick="answerQuestion('q4', 5)">Strongly Agree</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question5" style="display: none;">
+                    <label for="q5">5. Have you experienced changes in your sleep patterns?</label>
+                    <div class="question-options">
+                        <button type="button" onclick="answerQuestion('q5', 1)">Strongly Disagree</button>
+                        <button type="button" onclick="answerQuestion('q5', 2)">Disagree</button>
+                        <button type="button" onclick="answerQuestion('q5', 3)">Neutral</button>
+                        <button type="button" onclick="answerQuestion('q5', 4)">Agree</button>
+                        <button type="button" onclick="answerQuestion('q5', 5)">Strongly Agree</button>
+                    </div>
+                </div>
+
+                <div class="question" id="question6" style="display: none;">
+                    <label for="q6">6. Do you have trouble falling or staying asleep, or sleeping too much?</label>
+                    <div class="question-options">
+                        <button type="button" onclick="answerQuestion('q6', 1)">Strongly Disagree</button>
+                        <button type="button" onclick="answerQuestion('q6', 2)">Disagree</button>
+                        <button type="button" onclick="answerQuestion('q6', 3)">Neutral</button>
+                        <button type="button" onclick="answerQuestion('q6', 4)">Agree</button>
+                        <button type="button" onclick="answerQuestion('q6', 5)">Strongly Agree</button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="result" class="result" style="display: none;">
+                <!-- Result will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+
+    <div id="audio-player">
+        <button id="play-button">
+            <img src="play.png" alt="Play Audio">
+        </button>
+        <audio id="audio" src="download.mp3" preload="auto"></audio>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Soul Station. All rights reserved.</p>
+    </footer>
+
+    <script src="voice.js"></script>
+    <script src="search.js"></script>
+    <script src="song.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>

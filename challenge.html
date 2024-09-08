@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"  href="logo.png">
+    <title>Soul Station</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="challenge.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html" class="logo">Soul Station</a></div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton" onclick="search()" style="background-color: #557c57; color: white;">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="challenges-section">
+            <div class="relaxation-challenges">
+                <h1>Daily Relaxation Challenges</h1>
+                <p>Select a challenge below to start relaxing and earning rewards.</p>
+                
+                <div class="challenges-container">
+                    <div class="challenge-card" onclick="startChallenge(1, 300)"> <!-- 5 minutes -->
+                        <h2>Music and Relaxation</h2>
+                        <p>Listen to calming music for 5 minutes in a quiet space.</p>
+                        <button class="start-btn">Start</button>
+                    </div>
+                    <div class="challenge-card" onclick="startChallenge(2, 600)"> <!-- 10 minutes -->
+                        <h2>Guided Meditation</h2>
+                        <p>Follow a 10-minute guided meditation.</p>
+                        <button class="start-btn">Start</button>
+                    </div>
+                    <div class="challenge-card" onclick="startChallenge(3, 900)"> <!-- 15 minutes -->
+                        <h2>Take a Walk</h2>
+                        <p>Go for a 15-minute walk.</p>
+                        <button class="start-btn">Start</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timer-section">
+            <div id="timer-container" class="timer-container">
+                <h2 id="timer">00:00</h2>
+                <button onclick="endChallenge()" class="end-btn">End Challenge</button>
+            </div>
+
+            <div id="challenge-result" class="challenge-result">
+                <h2>Challenge Completed!</h2>
+                <p id="challenge-message">Well done! You've earned a new badge.</p>
+                <button onclick="closeResult()" class="close-btn">Close</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="audio-player">
+        <button id="play-button">
+            <img src="play.png" alt="Play Audio">
+        </button>
+        <audio id="audio" src="download.mp3" preload="auto"></audio>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Soul Station. All rights reserved.</p>
+    </footer>
+
+    <script src="voice.js"></script>
+    <script src="search.js"></script>
+    <script src="song.js"></script>
+    <script src="challenge.js"></script>
+</body>
+</html>

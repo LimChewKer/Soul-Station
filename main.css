@@ -1,0 +1,217 @@
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem ;
+}
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1450px;
+    width: 100%;
+}
+.info-box {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.info-box:hover {
+    transform: translateY(-5px);
+}
+.info-box h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.info-box p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+.transparent {
+    background-color: var(--light-green);
+    color: var(--text-color);
+}
+.blue {
+    background-color: #A7ADC2;
+    color: white;
+}
+
+main{
+padding-bottom: 70px;
+}
+
+.break-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #b3c7c3;
+color: #34495e;
+text-align: center;
+padding-top: 2rem;
+width: 100%;
+}
+
+.break-box {
+padding: 2rem;
+margin-bottom: 2rem;
+background-color: #e6f2ed;
+border-radius: 15px;
+max-width: 1200px; /* Ensure the text section is aligned with the content width */
+text-align: center;
+}
+
+.break-box h2 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.break-box p {
+font-size: 1.2rem;
+margin: 1.5rem auto;
+max-width: 80%; 
+}
+
+/* Styling for the game containers */
+.break-box-container {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+width: 100%;
+max-width: 1500px; /* Align the section to fit within the page width */
+margin: 0 auto; /* Center the section */
+flex-wrap: wrap;
+}
+
+.break-box.themed {
+flex: 1 1 300px;
+max-width: 300px;
+min-width: 300px;
+background-color: #e6f2ed; /* Match with the page theme */
+border-radius: 15px;
+padding: 7rem;
+width: 250px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+/* New Centering Styles */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 80px;
+}
+
+.break-box.themed:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.break-box .icon {
+font-size: 3rem;
+margin-bottom: 0.3rem;
+}
+
+.break-box h3 {
+font-size: 1.5rem;
+margin-bottom: 0.8rem;
+}
+
+.game-button {
+display: inline-block;
+padding: 0.8rem 1.5rem;
+background-color: #749d76;
+color: white;
+text-decoration: none;
+border-radius: 25px;
+font-weight: bold;
+transition: all 0.3s ease;
+margin-top: 0.8rem;
+text-align: center;
+}
+
+.game-button:hover {
+background-color: #557c57;
+transform: translateY(-3px);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.why-choose-us {
+    padding: 3rem 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #34495e;
+}
+
+.why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.why-choose-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+    .why-choose-us ul li {
+        margin-bottom: 0.8rem;
+    }
+
+        .why-choose-us ul li::before {
+            content: "✔";
+            color: #2e7d32;
+            margin-right: 0.5rem;
+        }
+.why-box img.why-icon {
+    width: 80px; /* Adjust the size of the image */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.why-box {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
+    border-radius: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+    .why-box:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    }
+
+.why-box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes in a row */
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+@media screen and (max-width: 900px) {
+    .why-box-container {
+        grid-template-columns: 1fr; /* 1 column on smaller screens */
+    }
+}
+
+main{
+padding-bottom: 150px;
+}

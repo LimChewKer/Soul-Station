@@ -1,0 +1,149 @@
+
+header .banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .banner-content h1 {
+    color: #34495e; /* White text color for the header title */
+}
+
+
+header nav .contribute-button {
+    background-color: #34495e; 
+    color: #fff; /* White text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: #34495e; /* White text color for headings */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    color: #34495e; /* White text inside input */
+    border-radius: 4px;
+}
+#mood{
+    margin-bottom: 10px;
+}
+
+#playlist {
+    margin-top: 20px;
+}
+
+.track-item {
+    padding: 10px;
+    border-bottom: 1px solid #444; /* Darker border for track items */
+}
+
+/* Music Mood Playlist Generator Styles */
+.mood-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin: 20px ;
+}
+
+.mood-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #34495e; /* Matching color for headings */
+}
+
+.mood-container input {
+    width: calc(100% - 40px); 
+    padding: 10px; 
+    background-color: #E8EAE5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mood-container button {
+    background-color: #557c57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.mood-container button:hover {
+    background-color: #78af7a;
+}
+
+.playlist-item {
+    background-color: #1e1e1e; /* Black background for playlist items */
+    padding: 10px;
+    border-bottom: 1px solid #333; /* Darker border */
+    border-radius: 5px;
+    color: #ffffff; /* White text color */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.playlist-item:last-child {
+    border-bottom: none;
+}
+
+.playlist-item img {
+    width: 60px; /* Adjusted size */
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.playlist-item h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.playlist-item p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #b3b3b3; /* Lighter text color for description */
+}
+
+.playlist-item a {
+    color: #34495e; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.playlist-item a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+.search {
+    width: 15px;
+}
+
+.pink-link {
+    color: #34495e;
+    text-decoration: none; /* Optional: Removes the underline */
+}
+
+.pink-link:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}

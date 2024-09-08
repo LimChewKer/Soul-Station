@@ -1,0 +1,141 @@
+    body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom, #87CEEB, #E0F7FA);
+                overflow: hidden;
+            }
+            #container {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            #garden {
+                flex: 4;
+                height: 100vh;
+                position: relative;
+                overflow-y: auto;
+                transition: background 2s ease;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                padding: 20px;
+                background-size: cover;
+                background-position: center;
+            }
+            
+            .flower-pot {
+                width: 100px;
+                height: 100px;
+                background-image: url('flower-pot.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: bottom center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+            }
+            
+            .plant {
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+            
+            #affirmation-form {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            }
+            
+            #affirmation-input {
+                width: 90%;
+                height: 100px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                resize: none;
+            }
+            
+            #mood-selector {
+                width: 90%;
+                margin-bottom: 15px;
+            }
+            
+            #mood-select {
+                width: 100%;
+                padding: 5px;
+            }
+            
+            #submit-btn {
+                width: 90%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            
+            #submit-btn:hover {
+                background-color: #45a049;
+            }
+            
+            #garden-stats {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: rgba(255, 255, 255, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+                z-index: 1000;
+            }
+            #soundscape-toggle, #exit-button {
+                position: fixed;
+                left: 20px;
+                padding: 10px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 1000;
+            }
+            #soundscape-toggle {
+                top: 20px;
+            }
+            #exit-button {
+                top: 70px;
+                background-color: #000000;
+                color: white;
+            }
+            #exit-button:hover {
+                background-color: #000000;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .spring-background {
+                background-image: url('spring-garden.jpg');
+            }
+            
+            .summer-background {
+                background-image: url('summer-beach-dusk.jpg');
+            }
+            
+            .autumn-background {
+                background-image: url('autumn-library.jpg');
+            }
+            
+            .winter-background {
+                background-image: url('winter-northern-lights.jpg');
+            }
+            

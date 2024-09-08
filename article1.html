@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Station</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html" class="logo">Soul Station</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton" onclick="search()" style="background-color: #557c57; color: white;">Search</button>
+            </div>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <!-- Breadcrumb Navigation -->
+            <div class="breadcrumb">
+                <a href="main.html">Home</a> &gt; <a href="article.html">Mental health services</a> &gt; <a href="article1.html">Psychological First Aid</a>
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="main-content">
+                <!-- Article Section -->
+                <div class="article-content">
+                    <h1 class="text-center"> <b>Psychological First Aid</b> </h1>
+                    <h2>Five Steps to Provide Psychological First Aid</h2>
+                    <ul>
+                        <li>Information</li>
+                        <li>Safety</li>
+                        <li>Basic Needs</li>
+                        <li>Extended Staff</li>
+                        <li>Identification of persons who are emotionally overwhelmed</li>
+                    </ul>
+
+                    <h2>Key Elements of Psychological First Aid</h2>
+                    <h3>Protection & Reassurance</h3>
+                    <p>They must feel secure and comforted before they set out to tackle the initial negative impact. One of the primary objectives of PFA is to help those affected feel safe once again through active or passive measures. This can involve taking them to a safe place, giving them time to recuperate, or simply soothing them in a calm manner.</p>
+
+                    <h3>Hear and Appreciate</h3>
+                    <p>PFA lets people talk, insisting only that they communicate about their feelings and experiences. It is important to ensure that the person is not judged and that all efforts are made to understand them instead.</p>
+
+                    <h3>Relationship and Access</h3>
+                    <p>Trauma may be such a profound experience that a person isolates herself/himself from other people, from friends and family, or even from their feelings. PFA is about empowering people with the means to help themselves. This could mean bringing them back in touch with their families or linking them to self-help networks and resources.</p>
+
+                    <h3>Adaptation and Recovery</h3>
+                    <p>PFA prioritizes actions that enable a person to positively cope with their circumstances. Such actions could include valuing important requests and suggesting steps that may improve a person’s mental and emotional state.</p>
+
+                    <h2>Who Can Offer Psychological First Aid?</h2>
+                    <p>Psychological First Aid, in contrast to many other mental health approaches that are confined to specialists, is a lay exercise in nature. Trained volunteers, first responders, community champions, and even family and friends can provide PFA when educated on its basic tenets.</p>
+                    <p>However, the APA and organizations like the WHO recommend a certain level of education for PFA providers, especially in cases involving disasters or critical incidents, to ensure that care is delivered in a way that alleviates distress rather than exacerbating it.</p>
+
+                    <h2>Conclusion</h2>
+                    <p>Psychological First Aid is not only a collection of techniques but also an expression of willingness to help those in emotional distress. It provides immediate relief and practical support to help people recover from emotional upheaval. Whether delivered by healthcare professionals or laypeople, PFA emphasizes human connection and care, making it a crucial tool in response to crises.</p>
+                    <hr class="divider" />
+                </div>
+                
+
+                <!-- Related Posts Section -->
+                <div class="related-posts">
+                    <div class="article-actions">
+                        <button id="read-article" class="action-button">
+                            <img src="play.png" alt="Listen Icon" class="button-icon">
+                            Listen
+                        </button>
+                        <button id="print-article" class="action-button">
+                            <img src="download.png" alt="Print Icon" class="button-icon">
+                            Source
+                        </button>
+                    </div>
+                    <h2>Related Posts</h2>
+                    <ul>
+                        <li><a href="article2.html">Related Post 1</a></li>
+                        <li><a href="article3.html">Related Post 2</a></li>
+                        <li><a href="article4.html">Related Post 3</a></li>
+                        <li><a href="article5.html">Related Post 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="audio-player">
+        <button id="play-button">
+            <img src="play.png" alt="Play Audio">
+        </button>
+        <audio id="audio" src="download.mp3" preload="auto"></audio>
+    </div>
+    <script src="voice.js"></script>
+    <script src="search.js"></script>
+    <script src="song.js"></script>
+    <script>
+        document.getElementById('read-article').addEventListener('click', function() {
+            const articleText = document.querySelector('.article-content').innerText;
+            const utterance = new SpeechSynthesisUtterance(articleText);
+            speechSynthesis.speak(utterance);
+        });
+    
+        document.getElementById('print-article').addEventListener('click', function() {
+            window.open('article1.pdf', '_blank');
+        });
+    </script>
+</body>
+</html>
